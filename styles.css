@@ -1,0 +1,280 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #e5e5e5;
+    display: flex;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+    color: #a64dff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #e5e5e5;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    color: #a64dff;
+}
+
+/* Contenedor principal */
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinea verticalmente */
+    align-items: center; /* Alinea horizontalmente */
+    padding: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 250px; /* Para no superponerse con el sidebar */
+    width: calc(100% - 250px); /* Ajuste del ancho sin contar el sidebar */
+    background-color: #1a1a1a;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100; /* Asegura que el header esté encima de otros elementos */
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #a64dff;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #999999;
+}
+
+.upload-section {
+    margin: 30px 0px 10px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.upload-section input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-section input[type="file"]:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.progress::-webkit-progress-value {
+    background-color: #a64dff;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: #a64dff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #903bcc;
+}
+
+.output {
+    margin-top: 20px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999999;
+}
+
+footer a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.password-section {
+    margin-top: 20px;
+}
+
+.password-section label {
+    color: #e5e5e5;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.password-section input[type="password"] {
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 200px; /* Tamaño más pequeño */
+}
+
+.password-section input[type="password"]:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+/* Botón para subir archivos */
+.upload-section button.btn {
+    padding: 8px 16px;
+    background-color: #3a3a3a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.upload-section button.btn:hover {
+    background-color: #4a4a4a;
+}
+
+.download-all-section {
+    margin-top: 20px;
+}
+
+.download-all-section .btn {
+    background-color: #a64dff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-all-section .btn:hover {
+    background-color: #903bcc;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+footer a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Específicos para la página de privacidad */
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;  /* Centra horizontalmente */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+}
+
+.privacy-container h1, .privacy-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: auto;
+}
+
+.privacy-container p, .privacy-container ul {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: auto;
+}
+
+.privacy-container ul {
+    list-style: disc;
+    padding-left: 40px;
+}
+
+.privacy-container footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #999;
+}
+
+.privacy-container footer a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+.privacy-container footer a:hover {
+    text-decoration: underline;
+}

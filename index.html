@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UnzipMe - Descomprime tus archivos al instante</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>UnzipMe</h2>
+        <a href="privacy.html">Privacidad</a>
+    </div>
+    <div class="header">
+        <h1 id="title"></h1>
+        <p id="description"></p>
+    </div>
+    <main class="container">
+        <div class="upload-section">
+            <p id="filePrompt"></p>
+            <input type="file" id="fileInput" accept=".zip,.gz,.rar,.tar,.tar.gz,.xz, .gzip" multiple onchange="showSelectedFiles()" />
+            <p id="selectedFiles"></p>
+            <progress id="progressBar" value="0" max="100" style="display:none;"></progress>
+            <button class="btn" onclick="unzipFiles()" role="button"></button>
+        </div>
+
+        <!-- Botón para introducir contraseña de archivo ZIP -->
+        <div class="password-section">
+            <label for="passwordInput">Contraseña (opcional):</label>
+            <input type="password" id="passwordInput" placeholder="Ingresa la contraseña" class="password" />
+        </div>
+
+        <!-- Botón para descargar todos los archivos como un ZIP -->
+        <div class="download-all-section">
+            <button class="btn" onclick="downloadAllFiles()">Descargar todos los archivos como ZIP</button>
+        </div>
+
+        <div class="output">
+            <p id="outputMessage"></p>
+            <ul id="fileList"></ul>
+        </div>
+
+        <footer>
+            <p>UnzipMe &copy; 2024 | <a href="#">Contacto</a> | <a href="privacy.html">Privacidad</a></p>
+        </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.4/pako.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/unrar.js/1.0.6/unrar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tar-js@0.3.1/dist/tar.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lzma@2.3.2/src/lzma_worker.min.js"></script>
+    <script src="scripts.js"></script>
+
+</body>
+<footer>
+    <p>UnzipMe &copy; 2024 | <a href="#">Contacto</a> | <a href="privacy.html">Privacidad</a></p>
+</footer>
+
+</html>
