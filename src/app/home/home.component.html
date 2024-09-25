@@ -1,0 +1,30 @@
+
+<!-- Main Content Area -->
+<div class="container">
+  <div class="header">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+  </div>
+
+  <!-- Upload Section -->
+  <div class="upload-section">
+    <p>{{ filePrompt }}</p>
+    <input type="file" id="fileInput" accept=".zip,.gz,.rar,.tar,.tar.gz,.xz,.gzip" multiple />
+    <button class="btn" (click)="unzipFiles()">{{ buttonText }}</button>
+  </div>
+
+  <!-- Output Section -->
+  <div class="output">
+    <p>{{ outputMessage }}</p>
+    <ul>
+      <li *ngFor="let file of fileList">
+        <a [href]="file.url" [download]="file.name">{{ file.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>UnzipMe &copy; 2024 | <a href="#">Contacto</a> | <a routerLink="/privacy-policy">Privacidad</a></p>
+  </footer>
+</div>

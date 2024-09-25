@@ -1,0 +1,73 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; /* Fondo oscuro del sitio */
+    color: #e5e5e5; /* Texto en color claro */
+}
+
+.privacy-container {
+    max-width: 60em;
+    margin: 20px auto;  /* Centra horizontalmente */
+    padding: 40px 20px; /* Más padding vertical */
+    background-color: #2b2b2b; /* Fondo gris oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra más suave */
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+    color: #e5e5e5; /* Texto en color claro para legibilidad */
+    min-height: 70vh; /* Asegura que cubra al menos el 70% de la altura de la pantalla */
+}
+
+/* Espaciado para los encabezados */
+.privacy-container h1, .privacy-container h2 {
+    text-align: center;
+    color: #ffffff; /* Blanco suave para los encabezados */
+    margin-bottom: 20px; /* Más espacio debajo del encabezado */
+}
+
+/* Espaciado para párrafos y listas */
+.privacy-container p {
+    font-size: 16px;
+    color: #e5e5e5;
+    line-height: 1.8; /* Aumenta el espacio entre líneas */
+    margin-bottom: 20px; /* Aumenta el espacio entre párrafos */
+}
+
+/* Espaciado para listas */
+.privacy-container ul {
+    list-style: disc;
+    padding-left: 40px;
+    margin-bottom: 20px; /* Espacio debajo de las listas */
+}
+
+/* Espaciado para los ítems de la lista */
+.privacy-container li {
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+/* Footer con más espacio superior */
+.privacy-container footer {
+    margin-top: 40px; /* Mayor espacio antes del footer */
+    text-align: center;
+    color: #999; /* Texto gris claro */
+}
+
+.privacy-container footer a {
+    color: #a64dff; /* Color suave para los enlaces */
+    text-decoration: none;
+}
+
+.privacy-container footer a:hover {
+    text-decoration: underline;
+}
+::ng-deep .privacy-container p {
+    font-size: 16px;
+    color: #e5e5e5;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}

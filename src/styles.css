@@ -1,0 +1,56 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    margin-left: 390px; /* Asegura que el contenido respete el espacio del sidebar */
+    padding: 20px;
+    flex-grow: 1;
+}
+/* Main Layout: Body Flexbox Layout */
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #e5e5e5;
+}
+
+/* Sidebar occupies a fixed space */
+.sidebar {
+    width: 250px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Container for Main Content */
+.container {
+    flex-grow: 1;
+    margin-left: 250px; /* Space for the fixed sidebar */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+/* Header for the Page */
+.header {
+    text-align: center;
+    font-size: 36px;
+    color: #a64dff;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999;
+}

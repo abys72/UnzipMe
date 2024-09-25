@@ -1,0 +1,193 @@
+
+/* Upload Section */
+.upload-section {
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.upload-section input[type="file"] {
+    margin: 10px 0;
+    padding: 8px;
+    font-size: 14px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.upload-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #a64dff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background-color: #903bcc;
+}
+
+
+
+.upload-section {
+    margin: 30px 0px 10px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.upload-section input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-section input[type="file"]:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+/* Barra de progreso */
+.progress {
+    width: 100%;
+    height: 20px;
+    appearance: none;
+}
+
+.progress::-webkit-progress-bar {
+    background-color: #444;
+    border-radius: 10px;
+}
+
+.progress::-webkit-progress-value {
+    background-color: #a64dff;
+    border-radius: 10px;
+}
+
+/* Botón */
+.btn {
+    background-color: #a64dff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #903bcc;
+}
+
+/* Sección de salida */
+.output {
+    margin-top: 20px;
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    color: #999999;
+}
+
+footer a {
+    color: #a64dff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contraseña */
+.password-section {
+    margin-top: 20px;
+}
+
+.password-section label {
+    color: #e5e5e5;
+    font-size: 14px;
+    margin-right: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.password-section input[type="password"] {
+    padding: 6px;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444;
+    border: 1px solid #666;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 200px; /* Tamaño más pequeño */
+}
+
+.password-section input[type="password"]:hover {
+    background-color: #555;
+    border-color: #888;
+}
+
+/* Botón de descarga */
+.download-all-section {
+    margin-top: 20px;
+}
+
+.download-all-section .btn {
+    background-color: #a64dff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-all-section .btn:hover {
+    background-color: #903bcc;
+}
+
+.container {
+    max-width: 80em;  /* Ancho máximo del contenedor */
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    /* Centrar horizontalmente */
+    margin: auto;
+
+    /* Flexbox para centrar verticalmente y horizontalmente */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center;     /* Centrar horizontalmente los elementos internos */
+    
+    /* Ocupa 70% de la pantalla en altura */
+    height: 70vh;
+
+    /* Asegura que el contenedor esté completamente centrado */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
